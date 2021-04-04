@@ -29,11 +29,3 @@ TEST(task, test3)
     States result = coffee.getState();
     EXPECT_EQ(WAIT, result);
 }
-
-TEST(task, test4) 
-{
-	Automata machine = Automata();
-	coffee.on();
-	States result = coffee.getState();
-	EXPECT_EQ(WAIT, result);
-}
